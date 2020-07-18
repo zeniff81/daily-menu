@@ -1,0 +1,26 @@
+{
+  "0": {
+    "name": "La Bandera",
+    "ingredients": ["arroz", "habichuela", "pollo", "ensalada verde"]
+  },
+  "1": {
+    "name": "Viveres con Bacalao",
+    "ingredients": ["platano", "yautía", "yuca", "aguacate", "bacalao", "jugo"]
+  },
+  "2": {
+    "name": "Trigo",
+    "ingredients": ["tipile", "aguacate", "jugo"]
+  },
+  "3": {
+    "name": "Arroz con Guandules",
+    "ingredients": ["arroz", "guandules", "res", "ensalada verde"]
+  },
+  "4": {
+    "name": "Moro",
+    "ingredients": ["moro", "pollo", "ensalada verde"]
+  },
+  "5": {
+    "name": "Sancocho",
+    "ingredients": ["sancocho", "arroz blanco", ""]
+  }
+}

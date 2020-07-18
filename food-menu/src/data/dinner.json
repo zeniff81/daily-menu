@@ -1,0 +1,26 @@
+{
+  "0": {
+    "name": "Sopa con albódigas",
+    "ingredients": ["sopa", "albóndigas", "vegetales"]
+  },
+  "1": {
+    "name": "Maicena",
+    "ingredients": ["maicena", "guineo", "pasas"]
+  },
+  "2": {
+    "name": "Maicena",
+    "ingredients": ["maicena", "guineo", "pasas"]
+  },
+  "3": {
+    "name": "Chocolate",
+    "ingredients": ["chocolate", "pan", "casabe"]
+  },
+  "4": {
+    "name": "Zapote [batida]",
+    "ingredients": ["zapote", "sandwich", "pasas"]
+  },
+  "5": {
+    "name": "Jugo de Avena con Limón",
+    "ingredients": ["avena", "limón", "galletas", "queso"]
+  }
+}
