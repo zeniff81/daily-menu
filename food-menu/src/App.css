@@ -7,11 +7,6 @@
   font-size: 25px;
   height: 640px;
   width: 360px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-items: center;
 }
 
 .App-title {
@@ -45,6 +40,10 @@
   background: teal;
   opacity: 0.8;
   z-index: 5;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .App-home:hover {
@@ -57,13 +56,6 @@
   bottom: 0px;
   left: 0;
   animation: animation-move 5s linear alternate infinite;
-}
-
-.meal-img {
-  background: green;
-  min-height: 100px;
-  height: auto;
-  width: 100%;
 }
 
 @keyframes animation-move {

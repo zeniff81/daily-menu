@@ -1,26 +1,38 @@
 {
   "0": {
+    "id": 0,
     "name": "Sopa con albódigas",
-    "ingredients": ["sopa", "albóndigas", "vegetales"]
+    "ingredients": ["sopa", "albóndigas", "vegetales"],
+    "img": "meatball-soup.png"
   },
   "1": {
+    "id": 1,
     "name": "Maicena",
-    "ingredients": ["maicena", "guineo", "pasas"]
+    "ingredients": ["maicena", "guineo", "pasas"],
+    "img": "maicena.png"
   },
   "2": {
-    "name": "Maicena",
-    "ingredients": ["maicena", "guineo", "pasas"]
+    "id": 2,
+    "name": "Viveres salami",
+    "ingredients": ["maicena", "guineo", "pasas"],
+    "img": "viveres-salami.png"
   },
   "3": {
+    "id": 3,
     "name": "Chocolate",
-    "ingredients": ["chocolate", "pan", "casabe"]
+    "ingredients": ["chocolate", "pan", "casabe"],
+    "img": "chocolate-pan.png"
   },
   "4": {
+    "id": 4,
     "name": "Zapote [batida]",
-    "ingredients": ["zapote", "sandwich", "pasas"]
+    "ingredients": ["zapote", "sandwich", "pasas"],
+    "img": "zapote.png"
   },
   "5": {
+    "id": 5,
     "name": "Jugo de Avena con Limón",
-    "ingredients": ["avena", "limón", "galletas", "queso"]
+    "ingredients": ["avena", "limón", "galletas", "queso"],
+    "img": "avena-limon.png"
   }
 }

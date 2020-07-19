@@ -1,26 +1,38 @@
 {
   "0": {
+    "id": 0,
     "name": "La Bandera",
-    "ingredients": ["arroz", "habichuela", "pollo", "ensalada verde"]
+    "ingredients": ["arroz", "habichuela", "pollo", "ensalada verde"],
+    "img": "la-bandera.png"
   },
   "1": {
+    "id": 1,
     "name": "Viveres con Bacalao",
-    "ingredients": ["platano", "yautía", "yuca", "aguacate", "bacalao", "jugo"]
+    "ingredients": ["platano", "yautía", "yuca", "aguacate", "bacalao", "jugo"],
+    "img": "viveres-bacalao.png"
   },
   "2": {
+    "id": 2,
     "name": "Trigo",
-    "ingredients": ["tipile", "aguacate", "jugo"]
+    "ingredients": ["tipile", "aguacate", "jugo"],
+    "img": "tipile.png"
   },
   "3": {
+    "id": 3,
     "name": "Arroz con Guandules",
-    "ingredients": ["arroz", "guandules", "res", "ensalada verde"]
+    "ingredients": ["arroz", "guandules", "res", "ensalada verde"],
+    "img": "arroz-guandules.png"
   },
   "4": {
+    "id": 4,
     "name": "Moro",
-    "ingredients": ["moro", "pollo", "ensalada verde"]
+    "ingredients": ["moro", "pollo", "ensalada verde"],
+    "img": "moro-rojo.png"
   },
   "5": {
+    "id": 5,
     "name": "Sancocho",
-    "ingredients": ["sancocho", "arroz blanco", ""]
+    "ingredients": ["sancocho", "arroz blanco", ""],
+    "img": "sancocho.png"
   }
 }

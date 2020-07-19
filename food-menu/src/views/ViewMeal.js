@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/meal.css';
-import { GiTwinShell } from 'react-icons/gi';
+import ViewPicture from './ViewPicture';
 
 class ViewMeal extends React.Component {
   constructor(props) {
@@ -8,19 +8,28 @@ class ViewMeal extends React.Component {
 
     this.state = {
       showPicture: false,
+      mealPicture: null,
+      pictureTitte: null,
+      scroll: 0,
     };
 
     this.showMealPicture = this.props.showMealPicture;
   }
 
-  render() {
-    console.log('props:', this.props);
-    const data = Object.values(this.props.dataJson);
-    const { currentView } = this.props;
+  showPicture(value, picture, pictureTitle) {
+    this.setState({
+      showPicture: value,
+      mealPicture: picture,
+      pictureTitle: pictureTitle,
+    });
+  }
 
-    const meals = data.map((el) => {
-      const name = <div>{el.name}</div>;
-      const ingredients = el.ingredients.map((ing) => (
+  importData() {
+    const data = Object.values(this.props.dataJson);
+
+    const meals = data.map((meal, idx) => {
+      const name = <div>{meal.name}</div>;
+      const ingredients = meal.ingredients.map((ing) => (
         <button key={ing} className='meal-ingredient'>
           {ing}
         </button>
@@ -29,20 +38,38 @@ class ViewMeal extends React.Component {
       return (
         <div
           className='meal'
-          key={el.name}
-          onClick={() =>
-            this.showMealPicture({ img: el.img, currentView: currentView })
-          }
+          onClick={() => this.showPicture(true, meal.img, meal.name)}
+          ref={this.meals}
         >
-          <div className='meal-name' key={el.name}>
-            {name}
-          </div>
+          <div className='meal-name'>{name}</div>
           <div>{ingredients}</div>
+          <div className='meal-number'>{idx + 1}</div>
         </div>
       );
     });
+
+    return meals;
+  }
+
+  render() {
+    const meals = this.importData();
+
+    if (this.state.showPicture) {
+      return (
+        <ViewPicture
+          goBack={() => this.showPicture(false, null, null)}
+          img={this.state.mealPicture}
+          pictureTitlte={this.state.pictureTitle}
+        />
+      );
+    }
     return (
-      <div>
+      <div className='meals-container'>
+        <img
+          alt=''
+          src={'/images/' + this.props.mealBackground}
+          className='meal-background'
+        />
         <div className='category-name'>{this.props.categoryName}</div>
         <div className='meals'>{meals}</div>
       </div>

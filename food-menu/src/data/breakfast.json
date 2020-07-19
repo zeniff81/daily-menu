@@ -1,37 +1,50 @@
 {
   "0": {
-    "name": "Avena",
-    "ingredients": ["avena", "pan integral"],
+    "id": 0,
+    "name": "Avena con leche",
+    "ingredients": ["avena", "pan integral", "pasas"],
     "img": "avena.png"
   },
   "1": {
+    "id": 1,
     "name": "Jugo de Limón con Pan",
     "ingredients": ["jugo", "pan integral"],
     "img": "jugo-limon.png"
   },
   "2": {
+    "id": 2,
     "name": "Frutas",
     "ingredients": ["lechoza", "piña", "guineo"],
     "img": "frutas.png"
   },
   "3": {
+    "id": 3,
     "name": "Jugo con Sandwich",
     "ingredients": ["jugo", "sandwich"],
     "img": "juice-sandwich"
   },
   "4": {
+    "id": 4,
     "name": "Platano Maduro con Huevo",
     "ingredients": ["platano", "huevo", "tomate", "queso"],
     "img": "yellow-banana.png"
   },
   "5": {
+    "id": 5,
     "name": "Viveres con Tuna",
     "ingredients": ["plátano", "yuca", "yautía", "guineo", "salami", "tuna"],
     "img": "groceries-tuna.png"
   },
   "6": {
+    "id": 6,
     "name": "Batida de fresa",
     "ingredients": ["batida de fresa", "sandwich"],
+    "img": "strawberry-shake.png"
+  },
+  "6": {
+    "id": 6,
+    "name": "Harina de Negrito",
+    "ingredients": ["Harina", "ciruelas"],
     "img": "strawberry-shake.png"
   }
 }

@@ -1,12 +1,12 @@
-import React from "react";
-import "../css/category.css";
+import React from 'react';
+import '../css/category.css';
 
 function Category(props) {
   return (
     <div
-      className="category"
+      className='category'
       style={props.styleInfo}
-      onClick={props.openCategory}
+      onClick={props.changeView}
     >
       {props.name}
     </div>
