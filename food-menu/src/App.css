@@ -1,95 +1,96 @@
 .App {
-  box-sizing: border-box;
-  text-align: center;
-  color: white;
-  cursor: pointer;
-  background-color: #282c34;
-  font-size: 25px;
-  height: 640px;
-  width: 360px;
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	background-color: #282c34;
+	font-size: 25px;
+	height: 640px;
+	position: relative;
+	width: 360px;
 }
 
 .App-title {
-  background-image: url('/images/header.png'); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 100px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  letter-spacing: 10px;
-  font-size: 2em;
-  font-family: impact;
-  line-height: 100px;
-  text-shadow: 2px 2px #282c34;
-  -webkit-text-stroke: 15px rgba(210, 55, 66, 0.5);
+	background-image: url('/images/header.png'); /* The image us  ed */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 100px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	letter-spacing: 10px;
+	font-size: 2em;
+	font-family: impact;
+	line-height: 100px;
+	text-shadow: 2px 2px #282c34;
+	-webkit-text-stroke: 15px rgba(210, 55, 66, 0.5);
 }
 .App-title::before {
-  content: 'MENU';
-  color: white;
-  position: absolute;
-  -webkit-text-stroke: 0px black; /* width and color */
+	content: 'MENU';
+	color: white;
+	position: absolute;
+	-webkit-text-stroke: 0px black; /* width and color */
 }
 
 .App-currentView {
-  height: 400px;
-  overflow: hidden;
+	height: 400px;
+	overflow: hidden;
 }
 
 .App-home {
-  height: 60px;
-  background: teal;
-  opacity: 0.8;
-  z-index: 5;
+	height: 60px;
+	background: teal;
+	opacity: 0.8;
+	z-index: 5;
 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .App-home:hover {
-  background: teal;
+	background: teal;
 }
 
 .meal-bg-icon {
-  font-size: 100px;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  animation: animation-move 5s linear alternate infinite;
+	font-size: 100px;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	animation: animation-move 5s linear alternate infinite;
 }
 
 @keyframes animation-move {
-  0% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-  60% {
-    transform: scale(1.5) translate(14px, -10px);
-    opacity: 0.1;
-  }
-  100% {
-    transform: scale(1.3) translate(7px, -7px);
-    opacity: 0;
-  }
+	0% {
+		transform: scale(1);
+		opacity: 0.6;
+	}
+	60% {
+		transform: scale(1.5) translate(14px, -10px);
+		opacity: 0.1;
+	}
+	100% {
+		transform: scale(1.3) translate(7px, -7px);
+		opacity: 0;
+	}
 }
 
 /* ---------------------------------- */
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
